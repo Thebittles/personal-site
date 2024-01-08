@@ -1,2 +1,23 @@
-
-
+body {
+    background: #151515;
+  }
+      #hero {
+        position: relative;
+        overflow: hidden;
+      }
+  
+      #hero::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: radial-gradient(circle, rgba(132, 204, 22, 1) 0%, transparent 33%);
+        filter: blur(100px); /* Add the blur effect to the radial gradient */
+        z-index: -1;
+      }
+  
+      #hero h1 {
+        z-index: 1; /* Ensure the h1 is above the radial gradient */
+      }
