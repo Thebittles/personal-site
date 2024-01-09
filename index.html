@@ -1,47 +1,95 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Your Tailwind CSS Example</title>
-    <!-- Tailwind CSS via CDN -->
-    <link
-      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
-      rel="stylesheet"
-    />
-    <!-- Tailwind via CDN -->
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
 
-    <body class="text-white bg-zinc-900">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Your Tailwind CSS Example</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&family=Work+Sans&display=swap" rel="stylesheet">
 
-      <section id="hero" class="h-screen flex flex-col justify-center items-center">
-        <h1>Welcome to my Website</h1>
-        <a href="#main" class="jump-button block mt-4 px-4 py-2 bg-lime-500 hover:bg-lime-400 text-white rounded-md">Enter</a>
-      </section>
-    
-      <section id="main" class="h-screen w-screen flex justify-center items-center bg-zinc-900 p-4">
-        <div class="grid grid-cols-12 grid-rows-12 gap-4 w-full h-full">
-          <!-- Your existing grid items go here -->
-          <!-- First box -->
-          <div class="col-span-3 row-span-8 text-center border border-lime-500 rounded-3xl h-full flex justify-center items-center bg-gradient-to-b from-zinc-800 from-50% to-lime-500 ">Portfolio</div>
-    
-          <div class="col-span-6 row-span-8 bg-zinc-900 rounded-3xl h-full border border-lime-500 flex justify-center items-center">Main</div>
-    
-          <div class="col-span-3 row-span-4 bg-zinc-900 rounded-3xl h-full border border-lime-500 flex justify-center items-center ">Resume</div>
-          <div class="col-span-3 row-span-8 bg-zinc-900 rounded-3xl h-full border border-lime-500 flex justify-center items-center ">Tada</div>
-    
-          <!-- New row   -->
-          <div class="col-span-3 row-span-4 bg-zinc-900 rounded-3xl h-full border border-lime-500 flex justify-center items-center ">Hobbies</div>
-          <div class="col-span-3 row-span-4 bg-zinc-900 rounded-3xl h-full border border-lime-500 flex justify-center items-center ">Github</div>
-          <div class="col-span-3 row-span-4 bg-zinc-900 rounded-3xl h-full border border-lime-500"></div>
+
+
+
+  <!-- Tailwind CSS via CDN -->
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet" />
+  <!-- Tailwind via CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+  <body class="text-white bg-dark-900">
+
+    <section id="hero" class="h-screen flex flex-col justify-center items-center">
+      <h1>Welcome to my Website</h1>
+      <a href="#main"
+        class="jump-button block mt-4 px-4 py-2 bg-lime-500 hover:bg-lime-400 text-white rounded-md">Enter</a>
+    </section>
+    <section class="h-40"></section>
+
+    <!-- Bento -->
+    <section id="main" class="h-screen w-screen flex justify-center items-center bg-dark-900 group p-4">
+      <div class="grid grid-cols-12 grid-rows-12 gap-4 w-full h-full">
+        <!-- First - Port, Main, Resume, Tada -->
+        <div
+          class="col-span-3 row-span-8 text-center border border-lime-800 hover:border-lime-500 hover:shadow-md hover:shadow-lime-600 transition duration-300 hover:border-lime-500 hover:shadow-md hover:shadow-lime-600 transition duration-300 rounded-3xl h-full flex justify-center items-center gradient-bg">
+          Portfolio</div>
+
+        <!-- Main -->
+        <div
+          class="col-span-6 row-span-8 bg-dark-900 rounded-3xl h-full border border-lime-800 hover:border-lime-500 hover:shadow-md hover:shadow-lime-600 transition duration-300 flex relative overflow-hidden">
+
+          <!-- Image Section -->
+          <div class="relative w-2.5/6 h-full overflow-hidden rounded-l-3xl">
+            <!-- Circular Avatar Image -->
+            <img src="./assets/headshot.png" alt="Avatar"
+              class="avatar w-full h-full object-cover object-center rounded-l-3xl">
+          </div>
+
+          <!-- Text Section -->
+          <div class="inset-0 w-3.5/6 h-full p-8 flex flex-col  items-end text-white">
+            <!-- Your text content goes here -->
+            <h2 class="text-4xl font-extrabold mb-4">Brittany Sifford</h2>
+            <p class="text-lg text-gray-300">Full Stack Software Developer</p>
+          </div>
+          <!-- Overlay from Bottom -->
+          <div
+            class="overlay absolute inset-x-0 bottom-0 h-full bg-gradient-to-t from-lime-800 via-transparent to-transparent">
+          </div>
         </div>
-      </section>
-    
-    
+
+
+
+
+
+
+
+        <div
+          class="col-span-3 row-span-4 bg-dark-900 rounded-3xl h-full border border-lime-800 hover:border-lime-500 hover:shadow-md hover:shadow-lime-600 transition duration-300 hover:border-lime-500 hover:shadow-md hover:shadow-lime-600 transition duration-300 flex justify-center items-center gradient-bg ">
+          Resume</div>
+        <div
+          class="col-span-3 row-span-8 bg-dark-900 rounded-3xl h-full border border-lime-800 hover:border-lime-500 hover:shadow-md hover:shadow-lime-600 transition duration-300 hover:border-lime-500 hover:shadow-md hover:shadow-lime-600 transition duration-300 flex justify-center items-center ">
+          Tada</div>
+
+        <!-- Second - Hobbies, Github, Linkedin -->
+        <div
+          class="col-span-3 row-span-4 bg-dark-900 rounded-3xl h-full border border-lime-800 hover:border-lime-500 hover:shadow-md hover:shadow-lime-600 transition duration-300 hover:border-lime-500 hover:shadow-md hover:shadow-lime-600 transition duration-300 flex justify-center items-center gradient-bg ">
+          Hobbies</div>
+        <div
+          class="col-span-3 row-span-4 bg-dark-900 rounded-3xl h-full border border-lime-800 hover:border-lime-500 hover:shadow-md hover:shadow-lime-600 transition duration-300 hover:border-lime-500 hover:shadow-md hover:shadow-lime-600 transition duration-300 flex justify-center items-center gradient-bg ">
+          Github</div>
+        <div
+          class="col-span-3 row-span-4 bg-dark-900 rounded-3xl h-full border border-lime-800 hover:border-lime-500 hover:shadow-md hover:shadow-lime-600 transition duration-300 hover:border-lime-500 hover:shadow-md hover:shadow-lime-600 transition duration-300 flex justify-center items-cente gradient-bgr">
+          LinkedIn</div>
+      </div>
+    </section>
+
+
 
     <script src="script.js"></script>
   </body>
+
 </html>
