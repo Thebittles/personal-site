@@ -11,8 +11,8 @@
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&family=Work+Sans&display=swap" rel="stylesheet">
 
 
-<!-- Font Awesome -->
-<script src="https://kit.fontawesome.com/045f1d3ba1.js" crossorigin="anonymous"></script>
+  <!-- Font Awesome -->
+  <script src="https://kit.fontawesome.com/045f1d3ba1.js" crossorigin="anonymous"></script>
 
   <!-- Tailwind CSS via CDN -->
   <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet" />
@@ -37,12 +37,12 @@
       <div class="grid grid-cols-12 grid-rows-12 gap-4 w-full h-full">
         <!-- First - Port, Main, Resume, Tada -->
         <div
-          class="col-span-3 row-span-8 text-center border border-lime-800 hover:border-lime-500 hover:shadow-md hover:shadow-lime-600 transition duration-300 hover:border-lime-500 hover:shadow-md hover:shadow-lime-600 transition duration-300 rounded-3xl h-full flex justify-center items-center gradient-bg">
+          class="col-span-4 row-span-12 text-center border border-lime-800 hover:border-lime-500 hover:shadow-md hover:shadow-lime-600 transition duration-300 hover:border-lime-500 hover:shadow-md hover:shadow-lime-600 transition duration-300 rounded-3xl h-full flex justify-center items-center gradient-bg">
           Portfolio</div>
 
         <!-- Main -->
         <div
-          class="col-span-6 row-span-8 bg-dark-900 rounded-3xl h-full border border-lime-800 hover:border-lime-500 hover:shadow-md hover:shadow-lime-600 transition duration-300 flex relative overflow-hidden">
+          class="col-span-4 row-span-4 bg-dark-900 rounded-3xl h-full border border-lime-800 hover:border-lime-500 hover:shadow-md hover:shadow-lime-600 transition duration-300 flex relative overflow-hidden">
 
           <!-- Image Section -->
           <div class="relative w-2.5/6 h-full overflow-hidden rounded-l-3xl">
@@ -63,42 +63,63 @@
           </div>
         </div>
 
+        <!-- Tada Section -->
+        <div
+          class="col-span-4 row-span-12 bg-dark-900 rounded-3xl h-full border border-lime-800 hover:border-lime-500 hover:shadow-md hover:shadow-lime-600 transition duration-300 hover:border-lime-500 hover:shadow-md hover:shadow-lime-600 transition duration-300 flex justify-center items-center ">
+          Tada</div>
 
 
 
 
 
-<!-- Resume Section -->
-<div class="col-span-3 row-span-4 bg-dark-900 rounded-3xl h-full border border-lime-800 hover:border-lime-500 hover:shadow-md hover:shadow-lime-600 transition duration-300 flex flex-col justify-center items-center gradient-bg">
-  <!-- Resume Title -->
-  <h2 class="text-2xl font-bold text-white mb-4">Resume</h2>
+        <!-- Resume Section -->
+        <div
+          class="col-span-1 row-span-2 bg-dark-900 rounded-3xl h-full border border-lime-800 hover:border-lime-500 hover:shadow-md hover:shadow-lime-600 transition duration-300 flex flex-col justify-center items-center gradient-bg">
+          <!-- Resume Title -->
+          <h2 class="text-2xl font-bold text-white mb-4">Resume</h2>
 
-  <!-- Larger Resume Icon with lime-500 stroke color -->
-  <a href="./assets/BrittanySifford.pdf" download="Brittany_Sifford_Resume.pdf" class="text-white text-lg hover:text-lime-500">
-    <svg xmlns="http://www.w3.org/2000/svg" height="48" width="48" viewBox="0 0 384 512" class="stroke-current"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M320 464c8.8 0 16-7.2 16-16V160H256c-17.7 0-32-14.3-32-32V48H64c-8.8 0-16 7.2-16 16V448c0 8.8 7.2 16 16 16H320zM0 64C0 28.7 28.7 0 64 0H229.5c17 0 33.3 6.7 45.3 18.7l90.5 90.5c12 12 18.7 28.3 18.7 45.3V448c0 35.3-28.7 64-64 64H64c-35.3 0-64-28.7-64-64V64z"/></svg>
-  </a>
-</div>
-
+          <!-- Larger Resume Icon with lime-500 stroke color -->
+          <a href="./assets/BrittanySifford.pdf" download="Brittany_Sifford_Resume.pdf"
+            class="text-white text-lg hover:text-lime-500">
+            <svg xmlns="http://www.w3.org/2000/svg" height="48" width="48" viewBox="0 0 384 512"
+              class="stroke-current"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+              <path
+                d="M320 464c8.8 0 16-7.2 16-16V160H256c-17.7 0-32-14.3-32-32V48H64c-8.8 0-16 7.2-16 16V448c0 8.8 7.2 16 16 16H320zM0 64C0 28.7 28.7 0 64 0H229.5c17 0 33.3 6.7 45.3 18.7l90.5 90.5c12 12 18.7 28.3 18.7 45.3V448c0 35.3-28.7 64-64 64H64c-35.3 0-64-28.7-64-64V64z" />
+            </svg>
+          </a>
+        </div>
 
 
 
 
 
         <div
-          class="col-span-3 row-span-8 bg-dark-900 rounded-3xl h-full border border-lime-800 hover:border-lime-500 hover:shadow-md hover:shadow-lime-600 transition duration-300 hover:border-lime-500 hover:shadow-md hover:shadow-lime-600 transition duration-300 flex justify-center items-center ">
-          Tada</div>
+          class="col-span-1 row-span-2 bg-dark-900 rounded-3xl h-full border border-lime-800 hover:border-lime-500 hover:shadow-md hover:shadow-lime-600 transition duration-300 hover:border-lime-500 hover:shadow-md hover:shadow-lime-600 transition duration-300 flex justify-center items-center gradient-bg ">
+          Github</div>
+        <div
+          class="col-span-1 row-span-2 bg-dark-900 rounded-3xl h-full border border-lime-800 hover:border-lime-500 hover:shadow-md hover:shadow-lime-600 transition duration-300 hover:border-lime-500 hover:shadow-md hover:shadow-lime-600 transition duration-300 flex justify-center items-center gradient-bgr">
+          LinkedIn</div>
+          <div
+          class="col-span-1 row-span-2 bg-dark-900 rounded-3xl h-full border border-lime-800 hover:border-lime-500 hover:shadow-md hover:shadow-lime-600 transition duration-300 hover:border-lime-500 hover:shadow-md hover:shadow-lime-600 transition duration-300 flex justify-center items-center gradient-bgr">
+          LinkedIn</div>
+
 
         <!-- Second - Hobbies, Github, Linkedin -->
         <div
-          class="col-span-3 row-span-4 bg-dark-900 rounded-3xl h-full border border-lime-800 hover:border-lime-500 hover:shadow-md hover:shadow-lime-600 transition duration-300 hover:border-lime-500 hover:shadow-md hover:shadow-lime-600 transition duration-300 flex justify-center items-center gradient-bg ">
-          Hobbies</div>
-        <div
-          class="col-span-3 row-span-4 bg-dark-900 rounded-3xl h-full border border-lime-800 hover:border-lime-500 hover:shadow-md hover:shadow-lime-600 transition duration-300 hover:border-lime-500 hover:shadow-md hover:shadow-lime-600 transition duration-300 flex justify-center items-center gradient-bg ">
-          Github</div>
-        <div
-          class="col-span-3 row-span-4 bg-dark-900 rounded-3xl h-full border border-lime-800 hover:border-lime-500 hover:shadow-md hover:shadow-lime-600 transition duration-300 hover:border-lime-500 hover:shadow-md hover:shadow-lime-600 transition duration-300 flex justify-center items-cente gradient-bgr">
-          LinkedIn</div>
+          class="col-span-4 row-span-3 bg-dark-900 rounded-3xl h-full border border-lime-800 hover:border-lime-500 hover:shadow-md hover:shadow-lime-600 transition duration-300 hover:border-lime-500 hover:shadow-md hover:shadow-lime-600 transition duration-300 flex justify-center items-center gradient-bg ">
+          About Me</div>
+
+          <div
+          class="col-span-4 row-span-2 bg-dark-900 rounded-3xl h-full border border-lime-800 hover:border-lime-500 hover:shadow-md hover:shadow-lime-600 transition duration-300 hover:border-lime-500 hover:shadow-md hover:shadow-lime-600 transition duration-300 flex justify-center items-center gradient-bg ">
+          Playlist</div>
+                    <div
+          class="col-span-4 row-span-2 bg-dark-900 rounded-3xl h-full border border-lime-800 hover:border-lime-500 hover:shadow-md hover:shadow-lime-600 transition duration-300 hover:border-lime-500 hover:shadow-md hover:shadow-lime-600 transition duration-300 flex justify-center items-center gradient-bg ">
+          Playlist</div>
+
+
+
       </div>
+      
     </section>
 
 

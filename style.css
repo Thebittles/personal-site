@@ -3,6 +3,7 @@
 
 
 
+/* Custom Colors */
 :root {
   --dark-900: #151515;
   --dark-800: #1e1e1e;
@@ -18,11 +19,65 @@ body {
     background: #151515;
     font-family: 'Work Sans', sans-serif;
   }
-      
+  
+  
+/* == Hero Section == */
 #hero {
         position: relative;
 
       }
+
+    @keyframes pulse {
+      0% {
+        transform: scale(0.95);
+        background: radial-gradient(circle, rgba(132, 204, 22, 1) 0%, transparent 33%);
+        filter: blur(100px)
+      }
+    
+      15% {
+        transform: scale(1.05);
+        background: radial-gradient(circle, rgba(132, 204, 22, 1) 0%, transparent 36%);
+        filter: blur(125px)
+
+      }
+
+      30% {
+        transform: scale(1.15);
+        background: radial-gradient(circle, rgba(132, 204, 22, 1) 0%, transparent 38%);
+        filter: blur(150px)
+
+      }
+
+      45% {
+        transform: scale(1.25);
+        background: radial-gradient(circle, rgba(132, 204, 22, 1) 0%, transparent 40%);
+        filter: blur(200px)
+
+      }
+
+
+      60% {
+        transform: scale(1.15);
+        background: radial-gradient(circle, rgba(132, 204, 22, 1) 0%, transparent 38%);
+        filter: blur(150px)
+
+      }
+    
+      75% {
+        transform: scale(1.05);
+        background: radial-gradient(circle, rgba(132, 204, 22, 1) 0%, transparent 36%);
+        filter: blur(125px)
+      }
+
+      90% {
+        transform: scale(1);
+        background: radial-gradient(circle, rgba(132, 204, 22, 1) 0%, transparent 33%);
+        filter: blur(100px)
+      }
+
+      
+
+    }
   
 #hero::before {
         content: '';
@@ -34,6 +89,9 @@ body {
         background: radial-gradient(circle, rgba(132, 204, 22, 1) 0%, transparent 33%);
         filter: blur(100px); /* Add the blur effect to the radial gradient */
         z-index: -1;
+        transform: scale(1);
+        animation: pulse 3s linear infinite;
+
       }
   
 #hero h1 {
@@ -44,9 +102,18 @@ body {
   font-size: 2.5rem;
 }
 
+
+/* Jump Scroll - Button Click */
 a {
   scroll-behavior: smooth;
 }
+
+
+/* ==End Hero Section== */
+
+
+
+
 
     /* Apply gradient transition on hover */
  /* .gradient-bg:hover {
